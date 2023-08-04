@@ -5,7 +5,7 @@
     height: 42px;
 }
 #nav_txt{
-    font-size: 0.45rem;
+    font-size: 0.43rem;
     margin-left: 10px;
 }
 #nav_items{
@@ -17,13 +17,13 @@
 
 }
 #nav_img{
-    height: 37px;
-    width: 37px;
+    height: 34px;
+    width: 34px;
     margin-left: 10px;
 }
 #nav_img img{
-    height: 33px;
-    width: 33px;
+    height: 30px;
+    width: 30px;
 }
 #about_sec{
     flex-direction: column;
@@ -34,7 +34,7 @@
     margin-bottom: 20px;
 }
 #sub_home_para{
-    font-size: 0.35rem;
+    font-size: 0.3rem;
 }
 #about_para_1, #about_para_3{
     font-size: 0.6rem;
