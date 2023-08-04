@@ -18,12 +18,22 @@ scrollContainer.addEventListener('wheel', function(e) {
 
 next_btn.addEventListener('click', ()=>{
     scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft += 390;
+    if(scrollContainer.style.width <= 700){
+        scrollContainer.scrollLeft += 180;
+    }
+    else{
+        scrollContainer.scrollLeft += 390;
+    }
 })
 
 back_btn.addEventListener('click', ()=>{
     scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft -= 390;
+    if(scrollContainer.style.width <= 700){
+        scrollContainer.scrollLeft -= 180;
+    }
+    else{
+        scrollContainer.scrollLeft -= 390;
+    }
 })
 
 function very_bad(){
