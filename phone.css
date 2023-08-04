@@ -1,12 +1,20 @@
+#home::after,#about_me::after,#my_creation::after,#contact_me::after{
+    height: 1px;
+}
 #nav_bar{
     height: 42px;
 }
 #nav_txt{
     font-size: 0.45rem;
+    margin-left: 10px;
+}
+#nav_items{
+    margin-right: 10px;
 }
 #nav_items a{
     font-size: 0.23rem;
-    margin: auto 5px;
+    margin: auto 3px;
+
 }
 #nav_img{
     height: 37px;
@@ -129,15 +137,16 @@ label{
     margin-top: 170px;
 }
 #creation{
-    height: 350px;
+    width: 180px;
+    height: 320px;
     margin-top: 140px;
 }
 #creation_header{
     margin-top: 20px;
 }
 #creation span img{
-    height: 210px;
-    width: 210px;
+    height: 160px;
+    width: 160px;
     margin: 10px;
 }
 #l_btn, #r_btn{
