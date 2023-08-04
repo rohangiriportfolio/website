@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url('stone_paper_scissors.jpg') repeat center;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    height: 450px;
+    width: 450px;
+    border: 3px solid rgb(58, 58, 58);
+    background: linear-gradient(45deg,rgb(0, 0, 0),rgb(133, 133, 133));
+}
+input{
+    margin: auto 68px;
+    width: 80px;
+    height: 40px;
+    background: transparent;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+}
+#your,#computer{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+#move{
+    display: flex;
+    flex-direction: row;
+}
+#y_heading{
+    color: rgb(182, 182, 182);
+    margin-bottom: 20px;
+}
+#c_heading{
+    margin-top: 0px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+#c_move{
+    margin: 50px;
+    padding: 10px auto;
+    height: 40px;
+    width: 85px;
+    background: center;
+}
+#y_move_stone{
+    background: url('st.png') no-repeat center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 3px;
+}
+#y_move_paper{
+    background: url('p.png') no-repeat center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 3px;
+}
+#y_move_scissors{
+    background: url('sc.png') no-repeat center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 3px;
+}
+#y_move_stone:hover{
+    background-color: rgba(255, 167, 248, 0.2);
+    border-radius: 5px;
+}
+#y_move_paper:hover{
+    background-color: rgba(180, 185, 255, 0.2);
+    border-radius: 5px;
+}
+#y_move_scissors:hover{
+    background-color: rgba(254, 255, 177, 0.2);
+    border-radius: 5px;
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+}
+h4{
+    color: rgb(182, 182, 182);
+    font-size: 20px;
+    margin-top: 0px; 
+    margin-bottom: 30px;
+}

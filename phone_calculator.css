@@ -1,0 +1,39 @@
+#calculator {
+    width: 250px;
+    height: 410px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+#calculator_heading {    
+    padding: 5px 0px;
+    height: 25px;
+}
+#sub_calculator_heading {
+    width: 205px;
+    height: 80px;
+    font-size: 2.5rem;
+}
+#creator_name h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    height: 10px;
+}
+#result_panel {
+    width: 165px;
+    height: 10px;
+    margin-bottom: 3px;
+}
+
+#Button input {
+    height: 35px;
+    width: 35px;
+    font-size: 10px;
+    margin: 2px;
+}
+
+hr{
+    width: 190px;
+}

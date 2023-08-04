@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Number Guessing Game by Rohan</title>
+	<link rel="stylesheet" href="guess.css">
+	<link rel="stylesheet" media="screen and (max-width: 600px)" href="phone_guess.css">
+</head>
+
+<body>
+	<h1 id="heading_1">Guessing Game</h1>
+	<h3 id="heading_2">Created by Rohan</h2>
+	<section id="guess_game">
+		<h1>Guess The Number</h1>
+		<div id="guess_limit">
+			<h3>Guessing Limit :</h3>
+			<span>
+				<div>
+					<input type = "number" id = "u_limit" placeholder="Upper Limit">
+					<input type = "number" id = "l_limit" placeholder="Lower Limit">
+				</div>
+				<input type = "submit" value = "Confirm" id = "submit" onclick="limit()">
+			</span>
+		</div>
+		<div id="output_guess">
+			<h3>Guess Quickly !!!</h3>
+			<div>
+				<input type = "number" id = "guess" placeholder="0">
+				<input type = "submit" value = "Confirm" id = "submit_guess" onclick="guess_match()">
+			</div>
+		</div>
+		<div>
+			<input type = "text" id = "display" readonly>
+		</div>
+	</section>
+	<script src="guess.js"></script>
+</body>
+</html>					

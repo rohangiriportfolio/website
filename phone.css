@@ -1,0 +1,153 @@
+#nav_bar{
+    height: 42px;
+}
+#nav_txt{
+    font-size: 0.45rem;
+}
+#nav_items a{
+    font-size: 0.23rem;
+    margin: auto 5px;
+}
+#nav_img{
+    height: 37px;
+    width: 37px;
+    margin-left: 10px;
+}
+#nav_img img{
+    height: 33px;
+    width: 33px;
+}
+#about_sec{
+    flex-direction: column;
+    margin-top: -15px;
+    margin-bottom: 50px;
+}
+#about_header{
+    margin-bottom: 20px;
+}
+#sub_home_para{
+    font-size: 0.35rem;
+}
+#about_para_1, #about_para_3{
+    font-size: 0.6rem;
+}
+#contact_sec{
+    flex-direction: column;
+}
+#sub_contact_sec_1{
+    font-size: 0.5rem;
+}
+#home_para_div{
+    width: 75%;
+}
+#home_para_img_1,#home_para_img_2{
+    height: 30px;
+    width: 30px;
+    margin-top: -5px;
+}
+#home_para_img_1{
+    margin-right: -15px;
+}
+#home_para_img_2{
+    margin-left: -15px;
+}
+#home_sec{
+    font-size: 2rem;
+}
+#home_header{
+    margin-top: -120px;
+    margin-bottom: 150px;
+    margin-left: 0px;
+}
+#typing{
+    font-size: 1rem;
+}
+#fixed{
+    font-size: 1.2rem;
+}
+#contact_form{
+    width: 250px;
+    height: 250px;
+}
+.input_field{
+    margin-bottom: 18px;
+}
+#my_location{
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+}
+#sub_contact_sec_1 a{
+    font-size: 0.5rem;
+}
+#sub_contact_sec_2{
+    justify-content: center;
+}
+#connect_me a{
+    font-size: 1rem;
+}
+input:focus~label,input:valid~label,textarea:focus~label,textarea:valid~label{
+    top:-10px;
+    font-size: 0.2rem;
+}
+#_name_err i,#_email_err i,#_address_err i,#comments_err i{
+    font-size: 0.25rem;
+}
+.input_field span{
+    font-size: 0.27rem;
+    top: -15px;
+}
+#reset, #submit{
+    font-size: 0.5rem;
+}
+label{
+    font-size: 0.5rem;
+}
+#contact_form_p{
+    font-size: 1rem;
+}
+#rate{
+    font-size: 0.5rem;
+    margin-top: -5px;
+}
+#contact_form_rate span{
+    font-size: 0.5rem;
+}
+#comments,input{
+    font-size: 0.5rem;
+}
+/* #contact_form_submit{
+    margin-bottom: 10px;
+} */
+#comments{
+    max-height: 45px;
+}
+#home_header,#about_header,#creation_header,#contact_header{
+    font-size: 0.6rem;
+}
+#about_scroll{
+    margin-top: 170px;
+}
+#creation{
+    height: 350px;
+    margin-top: 140px;
+}
+#creation_header{
+    margin-top: 20px;
+}
+#creation span img{
+    height: 210px;
+    width: 210px;
+    margin: 10px;
+}
+#l_btn, #r_btn{
+    font-size: 0.3rem;
+    height:15px;
+}
+#contact_scroll{
+    margin-top: 120px;
+}
+#contact_header{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}

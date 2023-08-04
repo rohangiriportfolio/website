@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stone_paper_scissors.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="phone_stone_paper_scissors.css">
+    <title>Stone Paper Scissors</title>
+    
+</head>
+<body>
+    <section>
+        <div id="main">
+            <h1>Stone Paper Scissors</h1>
+            <h4>Created by Rohan</h4>
+            <div>
+                <input type="text" value="You: 0" id="y_score" readonly>
+                <input type="text" value="Computer: 0" id="c_score" readonly>
+            </div>
+            <div id="move">
+                <div id="your">
+                    <h2 id="y_heading">Your Move</h2>
+                    <input type="text"  id="y_move_stone"  onclick="y_move1()" readonly>
+                    <input type="text"  id="y_move_paper"  onclick="y_move2()" readonly>
+                    <input type="text"  id="y_move_scissors"  onclick="y_move3()"readonly>
+                </div>
+                <div id="computer">
+                    <h2 id="c_heading">Computer Move</h2>
+                    <p id="c_move"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="stone_paper_scissors.js"></script>
+</body>
+</html>

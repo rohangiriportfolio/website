@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="snake.css">
+    <title>Snake Game</title>
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="phone_snake.css">
+</head>
+<body>
+    
+    <h1>Snake Game</h1>
+    <h4>Created by Rohan</h4>
+    <div id="score_box">
+        <p id="score">Score: 0</p>
+        <p id="highscore">High Score: </p>
+    </div>
+    
+
+    <canvas id="field" ></canvas>
+    <div id="main_btn">
+        <div id="sub_btn1">
+            <input type="text" value="&#x21d0" onclick="left()" readonly>
+        </div>
+        <div>
+            <div id="sub_btn2">
+                <input type="text" value="&#x21d1" onclick="up()" readonly>
+                <input type="text" value="&#x21d3" onclick="down()" readonly>
+            </div>
+        </div>
+        <div id="sub_btn3">
+            <input type="text" value="&#x21d2" onclick="right()" readonly>
+        </div>
+    </div>
+    <p id="reload_txt">Reload to Restart the GAME...</p>
+    <script src="snake.js"></script>
+</body>
+</html>

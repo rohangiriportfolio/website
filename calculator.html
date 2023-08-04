@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator by Rohan</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="phone_calculator.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+</head>
+
+<body>
+    <div id="calculator_body">
+        <section id="calculator">
+            <div id="calculator_heading">
+                <h1 id="sub_calculator_heading">Calculator</h1>
+            </div>
+            <div id="creator_name">
+                <h3>Created By Rohan</h3>
+            </div>
+            <div>
+                <input type="text" placeholder="Calculate Me !" id="result_panel" readonly>
+                <hr>
+            </div>
+            <div id="Button">
+                <div>
+                    <input type="button" value='!' onclick="result_panel.value+='!'">
+                    <input type="button" value='log' onclick="result_panel.value+='log('">
+                    <input type="button" value='e' onclick="result_panel.value+='2.71828182846'">
+                    <input type="button" value='&#960' onclick="result_panel.value+='3.14159265359'">
+                    <input type="button" value='exp' onclick="result_panel.value+='E'">
+                </div>
+                <div>
+                    <input type="button" value='^' onclick="result_panel.value+='^'">
+                    <input type="button" value='C' onclick="result_panel.value=''">
+                    <input type="button" value='&#x21d0' onclick="Back()">
+                    <input type="button" value='%' onclick="result_panel.value+='%'">
+                    <input type="button" value='/' onclick="result_panel.value+='/'">
+                </div>
+                <div>
+                    <input type="button" id="Sin" value='sin' onclick="Sin()">
+                    <input type="button" value='7' onclick="result_panel.value+='7'">
+                    <input type="button" value='8' onclick="result_panel.value+='8'">
+                    <input type="button" value='9' onclick="result_panel.value+='9'">
+                    <input type="button" value='*' onclick="result_panel.value+='*'">
+                </div>
+                <div>
+                    <input type="button" id="Cos" value='cos' onclick="Cos()">
+                    <input type="button" value='4' onclick="result_panel.value+='4'">
+                    <input type="button" value='5' onclick="result_panel.value+='5'">
+                    <input type="button" value='6' onclick="result_panel.value+='6'">
+                    <input type="button" value='+' onclick="result_panel.value+='+'">       
+                </div>
+                <div>
+                    <input type="button" id="Tan" value='tan' onclick="Tan()">
+                    <input type="button" value='3' onclick="result_panel.value+='3'">
+                    <input type="button" value='2' onclick="result_panel.value+='2'">
+                    <input type="button" value='1' onclick="result_panel.value+='1'">
+                    <input type="button" value='-' onclick="result_panel.value+='-'">
+                </div>
+                <div>
+                    <input type="button" value='(' onclick="result_panel.value+='('">
+                    <input type="button" value=')' onclick="result_panel.value+=')'">  
+                    <input type="button" value='0' onclick="result_panel.value+='0'">
+                    <input type="button" value='.' onclick="result_panel.value+='.'">
+                    <input type="button" id="equal" value='&#x3d' style="border: 1px solid white; border-radius: 100%;" onclick="Result()">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

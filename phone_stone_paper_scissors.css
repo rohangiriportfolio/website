@@ -1,0 +1,35 @@
+#main{
+    width: 265px;
+    height: 330px;
+}
+#y_heading,#c_heading{
+    font-size: 12px;
+}
+#your,#computer{
+    margin: 10px;
+    width: 100px;
+}
+h1{
+    font-size: 20px;
+}
+h4{
+    font-size: 12px;
+}
+input{
+    width: 70px;
+    height: 30px;
+    margin: auto 25px;
+}
+#c_heading{
+    margin-top: 0;
+}
+#c_move{
+    margin-top: 38px;
+    margin-bottom: 30px;;
+}
+#y_score,#c_score{
+    font-size: 7px;
+}
+#y_move_stone:hover,#y_move_paper:hover,#y_move_scissors:hover{
+    border-radius: 3px;
+}

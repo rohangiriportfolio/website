@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-image: url('tic_tac_toe.jpg');
+
+}
+
+section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr {
+    margin: 23px;
+    width: 300px;
+    animation: expand1 0.8s linear;
+    color: white;
+}
+
+.vr {
+    margin: -27px;
+    rotate: 90deg;
+    width: 100px;
+    animation: expand2 0.8s linear;
+    color: white;
+}
+
+@keyframes expand1 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 300px;
+    }
+}
+
+@keyframes expand2 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 95px;
+    }
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    /* border: 1px solid black; */
+}
+
+#turn1,
+#turn2 {
+    background: linear-gradient(45deg, rgb(22, 22, 255),rgb(255, 52, 160));
+    outline: none;
+    cursor: pointer;
+    border-top: 2px solid rgb(151, 151, 151);
+    border-left: 2px solid rgb(151, 151, 151);
+    border-right: 2px solid rgb(151, 151, 151);
+    height: 35px;
+    width: 147px;
+    margin: 3px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+#turn1{
+    border-bottom: 2px solid rgb(151, 151, 151);
+}
+#turn2{
+    border-bottom: 2px solid rgb(151, 151, 151);
+}
+
+#tic_tac_toe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(45deg, rgb(22, 22, 255),rgb(255, 52, 160));
+    background-position: center;
+    margin: 30px auto;
+    border: 3px solid gray;
+}
+
+#score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#score div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#score h4 {
+    font-size: 30px;
+    color: rgb(255, 0, 136);
+}
+#score h1 {
+    font-size: 50px;
+    color: rgb(34, 34, 255);
+    margin-bottom: 10px;
+}
+#score h5 {
+    font-size: 25px;
+    color: rgb(172, 0, 240);
+    margin-bottom: 30px;
+}
+@keyframes top_left_to_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(100px, 100px);
+	}
+}
+@keyframes bottom_right_to_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(-100px, -100px);
+	}
+}
+@keyframes top_right_to_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(-100px, 100px);
+	}
+}
+@keyframes bottom_left_to_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(100px, -100px);
+	}
+}
+@keyframes top_left_to_top_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(100px, 0px);
+	}
+}
+@keyframes top_right_to_top_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(-100px, 0px);
+	}
+}
+@keyframes left_middle_to_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(100px, 0px);
+	}
+}
+@keyframes right_middle_to_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(-100px, 0px);
+	}
+}
+@keyframes bottom_left_to_bottom_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(100px, 0px);
+	}
+}
+@keyframes bottom_right_to_bottom_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(-100px, 0px);
+	}
+}
+@keyframes top_left_to_left_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(0px, 100px);
+	}
+}
+@keyframes bottom_left_to_left_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(0px,-100px);
+	}
+}
+@keyframes top_middle_to_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(0px,100px);
+	}
+}
+@keyframes bottom_middle_to_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(0px,-100px);
+	}
+}
+@keyframes top_right_to_right_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(0px,100px);
+	}
+}
+@keyframes bottom_right_to_right_middle {
+    0% {
+		transform: translate(0px, 0px);
+	}
+
+	100% {
+		transform: translate(0px,-100px);
+	}
+}

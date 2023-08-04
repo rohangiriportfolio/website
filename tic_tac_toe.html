@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe by Rohan</title>
+    <link rel="stylesheet" href="tic_tac_toe.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="phone_tic_tac_toe.css">
+</head>
+<body>
+
+    <section id="score">
+        <h1>TIC TAC TOE</h1>
+        <h5>Created by Rohan</h5>
+        <h4>Player's Turn</h4>
+        <div>
+            <p id="turn2" ></p>
+            <p id="turn1" ></p>
+        </div>
+    </section>
+    <section id="tic_tac_toe">
+        <div class="row">
+            <div>
+                <input type="text" onclick="display1()" id="btn1" readonly>
+            </div>
+            <hr class="vr">
+            <div>
+                <input type="text" onclick="display2()" id="btn2" readonly>
+            </div>
+            <hr class="vr">
+            <div>
+                <input type="text" onclick="display3()" id="btn3" readonly>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="row">
+            <div>
+                <input type="text" onclick="display4()" id="btn4" readonly>
+            </div>
+            <hr class="vr">
+            <div>
+                <input type="text" onclick="display5()" id="btn5" readonly>
+            </div>
+            <hr class="vr">
+            <div>
+                <input type="text" onclick="display6()" id="btn6" readonly>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="row">
+            <div>
+                <input type="text" onclick="display7()" id="btn7" readonly>
+            </div>
+            <hr class="vr">
+            <div>
+                <input type="text" onclick="display8()" id="btn8" readonly>
+            </div>
+            <hr class="vr">
+            <div>
+                <input type="text" onclick="display9()" id="btn9" readonly>
+            </div>
+        </div>
+    </section>
+    <div style="display: flex; justify-content: center;">
+        <input type="text" style="border: 1px solid rgb(151, 151, 151); color: white; font-size: 15px; align-items: center; height: 25px; width: 85px; background: linear-gradient(45deg, rgb(22, 22, 255),rgb(255, 52, 160));" value="Reset Score" onclick="_reset()">
+    </div>
+    <script src="tic_tac_toe.js"></script>
+</body>
+</html>
